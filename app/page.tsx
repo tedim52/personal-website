@@ -167,7 +167,7 @@ export default function Home() {
           <h2 className="text-2xl font-semibold font-display text-foreground">Sponsors</h2>
           <div className="w-20 h-1 bg-primary rounded-full"></div>
 
-          {/* Sponsors as a simple bulleted list with bold text and slightly larger font */}
+          {/* Sponsors as a simple bulleted list with slightly larger font (no bold) */}
           <ul className="list-disc pl-5 space-y-2">
             {sponsors.map((sponsor, index) => (
               <li key={index} className="text-foreground/70 text-lg">
@@ -270,7 +270,7 @@ const sponsors = [
     name: "Bloctopus.io",
     link: "https://bloctopus.io/",
   },
-    {
+  {
     name: "Antithesis",
     link: "https://antithesis.com/",
   },
