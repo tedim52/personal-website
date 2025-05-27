@@ -91,7 +91,7 @@ export default function Home() {
 
           {/* About Text */}
           <p className="text-foreground/70">
-            maintaining open source {" "}
+            maintaining open source{" "}
             <a
               href="https://github.com/kurtosis-tech/kurtosis.git"
               className="text-primary hover:text-primary/80 transition-colors underline"
@@ -166,6 +166,11 @@ export default function Home() {
         <section className="space-y-6">
           <h2 className="text-2xl font-semibold font-display text-foreground">Sponsors</h2>
           <div className="w-20 h-1 bg-primary rounded-full"></div>
+
+          {/* Add this new text section */}
+          <p className="text-foreground/70">
+            A heartfelt thank you to the orgs that sponsor my open source work on Kurtosis ❤️
+          </p>
 
           {/* Sponsors as a simple bulleted list with slightly larger font (no bold) */}
           <ul className="list-disc pl-5 space-y-2">
@@ -273,5 +278,9 @@ const sponsors = [
   {
     name: "Antithesis",
     link: "https://antithesis.com/",
+  },
+  {
+    name: "Ethereum Foundation",
+    link: "https://ethereum.foundation/",
   },
 ]
