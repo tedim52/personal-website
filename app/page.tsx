@@ -1,5 +1,6 @@
-import { Github, Calendar, MapPin, X, Hash } from "lucide-react"
+import { Github, Calendar, MapPin, Hash } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { XIcon } from "@/components/x-icon"
 
 // Tag component for project status
 const ProjectTag = ({ text, variant = "default" }) => {
@@ -58,7 +59,12 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Github className="h-5 w-5" />
+                  <div
+                    className="w-5 h-5 rounded-sm flex items-center justify-center"
+                    style={{ backgroundColor: "#251400" }}
+                  >
+                    <Github className="h-4 w-4 text-background" />
+                  </div>
                   <span className="sr-only">GitHub</span>
                 </a>
                 <a
@@ -67,7 +73,12 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <X className="h-5 w-5" />
+                  <div
+                    className="w-5 h-5 rounded-sm flex items-center justify-center"
+                    style={{ backgroundColor: "#251400" }}
+                  >
+                    <XIcon />
+                  </div>
                   <span className="sr-only">X.com</span>
                 </a>
                 <a
@@ -76,7 +87,12 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Hash className="h-5 w-5" />
+                  <div
+                    className="w-5 h-5 rounded-sm flex items-center justify-center"
+                    style={{ backgroundColor: "#251400" }}
+                  >
+                    <Hash className="h-4 w-4 text-background" />
+                  </div>
                   <span className="sr-only">Warpcast</span>
                 </a>
               </div>
