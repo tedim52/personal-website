@@ -109,7 +109,7 @@ export default function Home() {
           <p className="text-foreground/70">
             maintaining open source{" "}
             <a
-              href="https://github.com/kurtosis-tech/kurtosis.git"
+              href="https://oss-kurtosis.vercel.app"
               className="text-primary hover:text-primary/80 transition-colors underline"
               target="_blank"
               rel="noopener noreferrer"
